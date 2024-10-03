@@ -1,7 +1,7 @@
 import { createLogger, transports, format } from "winston";
 
 const logger = createLogger({
-  level: "info", // This can be 'info' or 'error' based on your needs
+  level: "info", 
   format: format.combine(
     format.colorize(),
     format.timestamp(),
@@ -11,8 +11,8 @@ const logger = createLogger({
   ),
   transports: [
     new transports.Console(), // This will log to the console
-    // Optionally, log to a file
-    // new transports.File({ filename: 'logs/error.log', level: 'error' })
+   
+    // logging to a file -- new transports.File({ filename: 'logs/error.log', level: 'error' })
   ],
 });
 

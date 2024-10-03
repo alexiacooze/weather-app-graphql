@@ -1,5 +1,5 @@
 import request from "supertest";
-import { app } from "../server"; // Import your express app
+import { app } from "../server";
 
 describe("GraphQL API", () => {
   it("fetches weather data successfully", async () => {
